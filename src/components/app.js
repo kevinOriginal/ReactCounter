@@ -1,20 +1,28 @@
 import React, { Component } from 'react';
+import Counter from './Counter';
+import Controlls from './Controlls';
 
 class App extends Component {
   constructor(props) {
     super(props)
-    this.handleClick = this.handleClick.bind(this);
-    this.state = {value: null};
+    this.handleClickUp = this.handleClickUp.bind(this);
+    this.handleClickDown = this.handleClickDown.bind(this);
+
+    this.state = {value: 0};
   }
 
-  handleClick(e) {
-    if(e === up) {
-      this.setState({ value: value++});
-    } else if(e === down) {
-      this.setState({ value: value--});
-    } else {
-      console.log('error, the value that came is '+e);
-    }
+  handleClickUp() {
+    let value = this.state.value;
+    value = value+1;
+    this.setState({ value: value});
+    console.log(this.state.value);
+  }
+
+  handleClickDown() {
+    let value = this.state.value;
+    value= value -1;
+    this.setState({ value: value});
+    console.log(this.state.value);
   }
 
   render() {
@@ -27,8 +35,8 @@ class App extends Component {
           count={this.state.value}
           />
         <Controlls
-         clickUp={this.handleClick}
-         clickDown={this.handleClick}
+         clickUp={this.handleClickUp}
+         clickDown={this.handleClickDown}
          />
       </div>
     );

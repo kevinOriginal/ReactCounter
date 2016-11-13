@@ -1,13 +1,19 @@
 import React from 'react';
 
 const Controlls = (props) => {
+  const up = 'up';
+  const down = 'down';
+
   return (
-    <button
-      onClick = {props.clickUp(up)}>
-      + </button>
-    <button
-      onClick = {props.clickDown(down)}>
-      - </button>
+    <div>
+      <button
+        onClick = {props.clickUp}>
+        +</button>
+      <button
+        onClick = {props.clickDown}>
+        -</button>
+    </div>
+
   );
 }
 
