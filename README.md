@@ -1,23 +1,10 @@
-# ReduxSimpleStarter
+# 아주 간단한 카운터
 
-Interested in learning [Redux](https://www.udemy.com/react-redux/)?
+* Made only with react and NO REDUX!
 
-###Getting Started###
+* RSS 라는 boilerplate로 bootstrap화 되어 있습니다.
 
-There are two methods for getting started with this repo.
-
-####Familiar with Git?#####
-Checkout this repo, install dependencies, then start the gulp process with the following:
-
-```
-	> git clone git@github.com:StephenGrider/ReduxSimpleStarter.git
-	> cd ReduxSimpleStarter
-	> npm install
-	> npm start
-```
-
-####Not Familiar with Git?#####
-Click [here](https://github.com/StephenGrider/ReactStarter/releases) then download the .zip file.  Extract the contents of the zip file, then open your terminal, change to the project directory, and:
+* 아직 만드는중...
 
 ```
 	> npm install
