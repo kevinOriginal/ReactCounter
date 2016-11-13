@@ -8,7 +8,13 @@ class App extends Component {
   }
 
   handleClick(e) {
-
+    if(e === up) {
+      this.setState({ value: value++});
+    } else if(e === down) {
+      this.setState({ value: value--});
+    } else {
+      console.log('error, the value that came is '+e);
+    }
   }
 
   render() {
