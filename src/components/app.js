@@ -14,15 +14,14 @@ class App extends Component {
   handleClickUp() {
 
     this.setState((preValue) =>{
-       value: preValue++;
+       value: preValue.value++;
      });
   }
 
   handleClickDown() {
-    let value = this.state.value;
-    value= value -1;
-    this.setState({ value: value});
-    console.log(this.state.value);
+    this.setState(preValue => {
+      value: preValue.value--;
+    });
   }
 
   render() {
